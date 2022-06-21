@@ -1,0 +1,9 @@
+.category{
+    display: flex;
+    &__left{
+        &--block{
+            width: 47rem;
+            height: 38rem;
+        }
+    }
+}

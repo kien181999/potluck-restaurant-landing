@@ -1,0 +1,90 @@
+.newsletter{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    &__left{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 3rem;
+        &--field{
+            width: 38.5rem;
+            height: 5rem;
+            position: relative;
+        }
+        &--input{
+            width: 100%;
+            border-radius: 10px;
+            position: absolute;
+            height: 5rem;
+            border: solid 1px var(--white-color);
+            padding: 2rem 0 0 1.6rem;
+            font-size: 0;
+            background-color: var(--yellow-color);
+            transition: background-color .3s ease;
+            &:focus{
+                background-color: #fca13a;
+                font-size: 2rem;
+            }
+            &::selection{
+                background-color: rgba(252, 161, 58, 0.7);
+            }
+            &.active{
+                background-color: #fca13a;
+                font-size: 2rem;
+            }
+        }
+        &--button{
+            position: absolute;
+            height: 7rem;
+            background-color: rgba(0, 0, 0, 0.3);
+            right: 0;
+            border: 0;
+            width: 11rem;
+            border-radius: 10px;
+            font-size: 2rem;
+            cursor: pointer;
+            transition: width .3s ease, background-color .3s ease, opacity .3s ease;
+            opacity: 0;
+            color: #fca13a;
+            pointer-events: none;
+            &.active{
+                color: var(--white-color);
+                background-color:  #fca13a;
+                opacity: 1;
+                pointer-events: auto;
+                &:hover{
+                    background-color: #fca13a ;
+                }
+            }
+            &.full{
+                width: 100%;
+            }
+        }
+        &--input:focus + .newsletter__left--label{
+            font-size: 1.6rem;
+            transform: translate(1.4rem, 1rem);
+            color:  rgba(255, 255, 255, 0.7);
+        }
+        &--label{
+            position: absolute;
+			color: rgba(255, 255, 255, 1);
+			transform: translate(16px, 20px);
+			transition:
+				transform .3s ease,
+				font-size .3s ease,
+				color .3s .1s ease;
+			font-size: 2rem;
+            bottom: 3rem;
+            &.active{
+                font-size: 1.6rem;
+                transform: translate(16px, 11px);
+				color: rgba(255, 255, 255, 0.7);
+            }
+        }
+        &--input:focus + .newsletter__left--label + .newsletter__left--button{
+            opacity: 1;
+        }
+    }
+}

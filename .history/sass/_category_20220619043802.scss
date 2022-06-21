@@ -1,0 +1,19 @@
+.category{
+    display: flex;
+    &__left{
+        position: relative;
+        &--block{
+            width: 47rem;
+            height: 38rem;
+            background-color: var(--yellow-color) ;
+            border-radius: 10px;
+            margin-top: 19rem;
+        }
+        &--chef{
+            position: absolute;
+            bottom: 21.5rem;
+            left: 2rem;
+        }
+        &
+    }
+}

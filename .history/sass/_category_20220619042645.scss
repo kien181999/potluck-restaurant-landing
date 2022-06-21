@@ -1,0 +1,11 @@
+.category{
+    display: flex;
+    &__left{
+        &--block{
+            width: 47rem;
+            height: 38rem;
+            background-color: var(--yellow-color) ;
+            border-radius: 5px;
+        }
+    }
+}

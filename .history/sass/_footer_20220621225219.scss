@@ -1,0 +1,29 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    &__up{
+        display: flex;
+    }
+    &__left{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        &--list{
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            &--link{
+                color: var(--text-color);
+                transition: all .2s;
+                &:hover{
+                    color: var(--white-color);
+                    
+                }
+            }
+        }
+    }
+    &__right{
+        display: flex;
+        margin-left: auto;
+    }
+}

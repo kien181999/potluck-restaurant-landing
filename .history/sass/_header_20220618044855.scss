@@ -1,0 +1,10 @@
+.header{
+    &__menu{
+        display: flex;
+        margin-bottom: 10rem;
+        &--list{
+            display: flex;
+          
+        }
+    }
+}

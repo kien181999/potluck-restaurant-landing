@@ -1,0 +1,11 @@
+.header{
+    &__menu{
+        display: flex;
+        margin-bottom: 10rem;
+        justify-content: space-between;
+        &--list{
+            display: flex;
+          
+        }
+    }
+}

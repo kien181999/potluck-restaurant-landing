@@ -1,0 +1,18 @@
+.header{
+    &__menu{
+        display: flex;
+        margin-bottom: 10rem;
+        justify-content: space-between;
+        align-items: center;
+        height: 5.5rem;
+        &--list{
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            width: 38rem;
+        }
+        &--link{
+            font-size: 1.6rem;
+        }
+    }
+}

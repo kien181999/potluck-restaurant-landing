@@ -1,0 +1,22 @@
+.review{
+    display: flex;
+    justify-content: space-between;
+    &__comment{
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        display: flex;
+        flex-direction: column;
+        margin-right: 10rem;
+        gap: 3rem;
+        &--customer{
+            display: flex;
+            gap: 2rem;
+        }
+    }
+    &__client{
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        display: flex;
+        flex-direction: column;
+    }
+}

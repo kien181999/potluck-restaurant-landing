@@ -1,0 +1,19 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    &__up{
+        display: flex;
+    }
+    &__left{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        &--list{
+            display: flex;
+        }
+    }
+    &__right{
+        display: flex;
+        margin-left: auto;
+    }
+}

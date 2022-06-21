@@ -1,0 +1,58 @@
+.menu{
+    display: flex;
+    height: 73rem;
+    flex-direction: column;
+    &__title{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        &--main{
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+        }
+        &--sub{
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+        }
+    }
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        &--menu{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            padding: 5rem;
+            &::before{
+                position: absolute;
+                right: 0;
+                top: ;
+                content: "";
+                height: 70%;
+                width: 2px;
+                background-color: var(--text-color);
+                z-index: 10;
+            }
+            &--list{
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 4rem;
+            }
+            &--link{
+                font-size: 1.6rem;
+                color: black;
+                font-weight: 600;
+                border-radius: 10px;
+                transition: all .2s;
+                padding: 1rem 2rem;
+                &:hover{
+                    color: var(--color-white);
+                    background-color: var(--yellow-color) ;
+                }
+            }
+        }
+    }
+}

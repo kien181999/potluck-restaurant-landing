@@ -1,0 +1,27 @@
+.header{
+    &__menu{
+        display: flex;
+        margin-bottom: 10rem;
+        justify-content: space-between;
+        align-items: center;
+        height: 5.5rem;
+        &--list{
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            width: 38rem;
+        }
+        &--item{
+            font-size: 1.6rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: all .2s;
+            &:hover{
+                color: var(--yellow-color);
+            }
+        }
+    }
+    &__content{
+        display: flex;
+    }
+}

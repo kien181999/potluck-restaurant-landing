@@ -447,7 +447,7 @@ body {
       position: absolute;
       bottom: -1rem;
       left: 2rem; }
-      @media screen and (max-width: 586px) {
+      @media screen and (max-width: 600px) {
         .category__left--chef {
           display: none; } }
     .category__left--customer {
@@ -480,7 +480,7 @@ body {
       .category__left--customer-icon {
         font-size: 1.4rem;
         color: var(--yellow-color); }
-      @media screen and (max-width: 586px) {
+      @media screen and (max-width: 600px) {
         .category__left--customer {
           top: 50%;
           left: 50%;
@@ -1076,3 +1076,44 @@ body {
 .popup:target {
   opacity: 1;
   visibility: visible; }
+
+.slider {
+  position: relative;
+  max-width: 57rem; }
+  .slider-next, .slider-prev {
+    position: absolute;
+    font-size: 3rem;
+    color: var(--text-color);
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: var(--yellow-color);
+    transition: all .2s;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    align-items: center; }
+    .slider-next:hover, .slider-prev:hover {
+      transform: translateY(-20px);
+      box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+      color: var(--white-color); }
+  .slider-next {
+    right: -2.5rem; }
+  .slider-prev {
+    left: -2.5rem; }
+  .slider-main {
+    display: flex;
+    position: relative;
+    transition: transform 0.25s linear;
+    max-width: 100%; }
+  .slider-wrapper {
+    overflow: hidden;
+    position: relative;
+    max-width: 100%; }
+  .slider-item {
+    display: flex;
+    flex: 1 0 100%;
+    user-select: none;
+    width: 100%; }

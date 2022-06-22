@@ -50,7 +50,7 @@ ScrollReveal({
     delay: 300
 });
 
-ScrollReveal().reveal('.category__left, .feature__button, .newsletter__right, .footer__bottom',{ delay: 400, origin: 'bottom' });
-ScrollReveal().reveal('.category__right--title, .feature__text, .review__client, .footer__right',{ delay: 400, origin: 'right' });
-ScrollReveal().reveal('.menu__item--menu, .feature__title, .newsletter__left, .footer__left',{ delay: 400, origin: 'left' });
-ScrollReveal().reveal('.menu__title, .review__comment, .footer__up',{ delay: 400, origin: 'top' });
+ScrollReveal().reveal('.category__left, .feature__button, .newsletter__right, .footer__bottom, .category__right--food',{ delay: 400, origin: 'bottom' });
+ScrollReveal().reveal('.category__right--title, .feature__text, .review__client, .footer__right, .menu__item--img-2',{ delay: 400, origin: 'right' });
+ScrollReveal().reveal('.menu__item--menu, .category__right--text, .feature__title, .newsletter__left, .footer__left',{ delay: 400, origin: 'left' });
+ScrollReveal().reveal('.menu__title, .review__comment, .footer__up, .menu__item--img-1',{ delay: 400, origin: 'top' });

@@ -93,6 +93,9 @@
             @media screen and (max-width: 1023.98px) {
                 bottom: 3.5rem;
             }
+            @media screen and (max-width: 600px) {
+                bottom: 5rem;
+            }
             
         }
         &--label:active{

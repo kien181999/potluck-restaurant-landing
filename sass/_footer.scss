@@ -1,7 +1,13 @@
 .footer {
     display: flex;
     flex-direction: column;
-
+    @media screen and (max-width: 1023.98px) {
+        padding: 5rem;
+    }
+    @media screen and (max-width: 800px) {
+                
+        padding: 5rem 0;
+    }
     &__up {
         display: flex;
         margin-bottom: 5rem;
@@ -15,6 +21,10 @@
             width: 100%;
             background-color: var(--third-color);
         }
+        @media screen and (max-width: 767.98px) {
+            flex-direction: column;
+            align-items: center;
+         }
     }
     &__down{
         margin-top: 5rem;
@@ -27,7 +37,11 @@
         display: flex;
         flex-direction: column;
         gap: 3rem;
-
+        @media screen and (max-width: 767.98px) {
+            align-items: center;
+            margin-bottom: 5rem;
+        }
+        
         &--list {
             display: flex;
             list-style: none;
@@ -48,6 +62,14 @@
         display: flex;
         margin-left: auto;
         gap: 10rem;
+    @media screen and (max-width: 1023.98px) {
+        gap: 5rem;
+    }
+    @media screen and (max-width: 767.98px) {
+        margin-left: 0;
+    }
+    
+    
         &--list{
             display: flex;
             flex-direction: column;

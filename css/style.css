@@ -290,6 +290,9 @@ body {
         height: 10rem;
         width: 1px;
         background-color: var(--third-color); }
+        @media screen and (max-width: 767.98px) {
+          .header__hr--jd::before {
+            right: -3rem; } }
       .header__hr--jd--text {
         margin-bottom: 3rem; }
     .header__hr--emp {
@@ -996,3 +999,80 @@ body {
   .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
     top: 0;
     transform: rotate(-135deg); }
+
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 3000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .5s; }
+  .popup__content {
+    width: 50%;
+    height: 48rem;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5) 50%), url(../img/burger.jpg);
+    background-size: contain;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 10rem;
+    gap: 5rem; }
+    .popup__content--btn {
+      display: flex;
+      gap: 2rem; }
+    .popup__content--close {
+      position: absolute;
+      top: 5rem;
+      left: 5rem;
+      font-size: 5rem;
+      color: var(--text-color);
+      transition: all .2s; }
+      .popup__content--close:hover {
+        color: var(--white-color); }
+
+.form {
+  margin-left: 2rem; }
+  .form__group {
+    margin-bottom: 2rem; }
+  .form__input {
+    font-size: 1.6rem;
+    font-family: var(--body-font);
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 90%;
+    display: block;
+    transition: all .2s; }
+  .form__input:focus {
+    outline: none;
+    width: 100%;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #1fac1f; }
+  .form__input:focus:invalid {
+    border-bottom: 3px solid #ac1f1f; }
+  .form__label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: .7rem;
+    display: block;
+    transition: all .2s; }
+  .form__input:placeholder-shown + .form__label {
+    opacity: 0;
+    visibility: hidden; }
+
+.popup:target {
+  opacity: 1;
+  visibility: visible; }

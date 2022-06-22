@@ -1,0 +1,94 @@
+.popup {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 3000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+    &__content {
+        width: 50%;
+        height: 48rem;
+        background-image: linear-gradient(180deg, 
+                          rgba(white, .5) 0%, 
+                          rgba(white, .5) 50%, 
+                          rgba(white, .5) 50%, 
+                          ), 
+                          url(../img/burger.jpg);
+        background-size: contain;
+
+        box-shadow: 0 2rem 4rem rgba(0, 0, 0, .2);
+        position: absolute;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5rem 10rem;
+        gap: 5rem;
+        &--btn{
+            display: flex;
+            gap: 2rem;
+        }
+        &--close{
+            position: absolute;
+            top: 5rem;
+            left: 5rem;
+            font-size: 5rem;
+            color: var(--text-color);
+            transition: all .2s;
+            &:hover{
+                color: var(--white-color);
+            }
+        }
+    }
+}
+.form{
+    margin-left: 2rem;
+    &__group{
+        margin-bottom: 2rem;
+    }
+    &__input{
+        font-size: 1.6rem;
+        font-family: var(--body-font);
+        padding: 1.5rem 2rem;
+        border-radius: 2px;
+        background-color: rgba(white, .5);
+        border: none;
+        border-bottom: 3px solid transparent;
+        width: 90%;
+        display: block;
+        transition: all .2s;
+    }
+    &__input:focus{
+        outline: none;
+        width: 100%;
+        box-shadow: 0 1rem 2rem rgba(black, .1);
+        border-bottom: 3px solid rgb(31, 172, 31);
+    }
+    &__input:focus:invalid{
+        border-bottom: 3px solid rgb(172, 31, 31);
+    }
+    &__label{
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-left: 2rem;
+        margin-top: .7rem;
+        display: block;
+        transition: all .2s;
+    }
+    &__input:placeholder-shown + &__label{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+.popup:target{
+    opacity: 1;
+    visibility: visible;
+}
